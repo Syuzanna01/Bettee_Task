@@ -13,7 +13,7 @@ namespace BeeteeManagement.Controllers
     {
         private readonly DataContext _context;
         public UserController(DataContext context)
-        {
+        { 
             _context = context;
         }
 

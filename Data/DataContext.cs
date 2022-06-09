@@ -6,7 +6,7 @@ namespace BeeteeManagement.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
-        public DbSet<EmployeeRequest> Employeess { get; set; }
+        public DbSet<EmployeeRequest> Employees { get; set; }
         public DbSet<HrDataRequest> HrDatas { get; set; }
     }
 }

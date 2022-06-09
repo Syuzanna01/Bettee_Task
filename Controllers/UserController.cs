@@ -33,25 +33,34 @@ namespace BeeteeManagement.Controllers
         [HttpGet]
         public async Task<ActionResult<List<EmployeeRequest>>> Get()
         {
-            return Ok(await _context.Employeess.ToListAsync());
+            return Ok(await _context.Employees.ToListAsync());
         }
 
          [HttpGet("(id)")]
         public async Task<ActionResult<EmployeeRequest>> Get(int id)
         {
-            var employee = await _context.Employeess.FindAsync(id);
+            var employee = await _context.Employees.FindAsync(id);
             if (employee == null)
                 return BadRequest("Not found");
             return Ok(employee);
         }
 
+        //[HttpPost]
+        //public async Task<ActionResult<List<EmployeeRequest>>> AddUsers(EmployeeRequest employee)
+        //{
+        //    _context.Employees.Add(employee);
+        //    await _context.SaveChangesAsync();
+
+        //    return Ok(await _context.Employees.ToListAsync());
+        //}
+
         [HttpPost]
-        public async Task<ActionResult<List<EmployeeRequest>>> AddUsers([FromBody] EmployeeRequest employee)
+        public async Task<ActionResult<List<EmployeeRequest>>> AddUsers(EmployeeRequest employee)
         {
-            _context.Employeess.Add(employee);
+            _context.Employees.Add(employee);
             await _context.SaveChangesAsync();
 
-            return Ok(await _context.Employeess.ToListAsync());
+            return Ok(await _context.Employees.ToListAsync());
         }
 
         [HttpPut]

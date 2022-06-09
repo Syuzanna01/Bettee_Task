@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeeteeManagement", "BeeteeManagement.csproj", "{15B89560-6536-4953-99A9-CF662E243D01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15B89560-6536-4953-99A9-CF662E243D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B89560-6536-4953-99A9-CF662E243D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B89560-6536-4953-99A9-CF662E243D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B89560-6536-4953-99A9-CF662E243D01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE225BE8-AD32-4F22-B292-263F2D2E8D37}
+	EndGlobalSection
+EndGlobal

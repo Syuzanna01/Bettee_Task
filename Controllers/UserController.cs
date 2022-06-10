@@ -13,7 +13,7 @@ namespace BeeteeManagement.Controllers
     {
         private readonly DataContext _context;
         public UserController(DataContext context)
-        { 
+        {
             _context = context;
         }
 
@@ -30,13 +30,14 @@ namespace BeeteeManagement.Controllers
                 Email = "sfdfarfrf.com",
                  }
             };
+
         [HttpGet]
         public async Task<ActionResult<List<EmployeeRequest>>> Get()
         {
             return Ok(await _context.Employees.ToListAsync());
         }
 
-         [HttpGet("(id)")]
+        [HttpGet("(id)")]
         public async Task<ActionResult<EmployeeRequest>> Get(int id)
         {
             var employee = await _context.Employees.FindAsync(id);
@@ -44,15 +45,6 @@ namespace BeeteeManagement.Controllers
                 return BadRequest("Not found");
             return Ok(employee);
         }
-
-        //[HttpPost]
-        //public async Task<ActionResult<List<EmployeeRequest>>> AddUsers(EmployeeRequest employee)
-        //{
-        //    _context.Employees.Add(employee);
-        //    await _context.SaveChangesAsync();
-
-        //    return Ok(await _context.Employees.ToListAsync());
-        //}
 
         [HttpPost]
         public async Task<ActionResult<List<EmployeeRequest>>> AddUsers(EmployeeRequest employee)

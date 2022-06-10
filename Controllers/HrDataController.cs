@@ -25,8 +25,7 @@ namespace BeeteeManagement.Controllers
                 Id = 1,
                 Payroll = 5233,
                 SocSecureNumber ="adfavd",
-
-                 }
+                }
             };
         [HttpGet]
         public async Task<ActionResult<List<HrDataRequest>>> Get()
@@ -53,9 +52,9 @@ namespace BeeteeManagement.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<List<HrDataRequest>>> UpdateUsers(EmployeeRequest request)
+        public async Task<ActionResult<List<HrDataRequest>>> UpdateUsers(HrDataRequest request)
         {
-            var employee = Users.Find(h => h.Id == request.ID);
+            var employee = Users.Find(h => h.Id == request.Id);
             if (employee == null)
                 return BadRequest("Not found");
 

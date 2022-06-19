@@ -3,7 +3,7 @@ using BeeteeManagement.Data;
 using BeeteeManagement.Helpers;
 using BeeteeManagement.Models;
 using Microsoft.AspNetCore.Mvc;
-using static BeeteeManagement.Helpers.GenderEnum;
+
 using BeeteeManagement.Data;
 
 namespace BeeteeManagement.Controllers

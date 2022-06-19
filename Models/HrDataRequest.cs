@@ -8,7 +8,7 @@ namespace BeeteeManagement.Models
         public decimal Payroll { get; set; } 
         public string SocSecureNumber { get; set; }
         public int EmployeeId { get; set; }
-        public EmployeeRequest Employee { get; set; } 
+        public EmployeeRequest? Employee { get; set; } 
         public decimal Salary { get; set; } 
     }
 }

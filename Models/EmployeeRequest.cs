@@ -9,9 +9,9 @@ namespace BeeteeManagement.Models
         public string LastName { get; set; }
         public string IdentityNumber { get; set; }
         public DateTime BirthDate { get; set; }
-        public GenderEnum Gender { get; set; } 
+        public  Gender Gender { get; set; } 
         public string ContactNumber { get; set; } 
         public string Email { get; set; } 
-        public ICollection<HrDataRequest> HrDatas {get;set;} 
+        public ICollection<HrDataRequest>? HrDatas {get;set;} 
     }
 }
